@@ -1,0 +1,276 @@
+<div class="relative">
+    <div class="relative w-3/4 py-8 ">
+        <div class="w-3/4 mx-auto h-full mb-8">
+          <p class="font-mono text-xl py-4">Chapter 3: Advanced Git Concepts and Best Practices</p>
+          <br>
+          <!-- Section: Git Workflow -->
+        <section class="mb-8" id="par1">
+            <h2 class="text-xl font-semibold mb-2">Git Workflow</h2>
+            <p class="mb-4">In the software development lifecycle, adopting an effective Git workflow is essential for collaboration, code organization, and project management. This section delves into various Git workflows, allowing you to make informed decisions based on your project requirements. Two popular Git workflows that will be covered are Gitflow and GitHub flow:</p>
+
+            <!-- Subsection: Gitflow Workflow -->
+            <div class="mb-6">
+                <h3 class="text-lg font-semibold mb-2">Gitflow Workflow</h3>
+                <p class="mb-2">Gitflow is a branching model that provides a structured approach to managing branches in a Git repository. Key components of the Gitflow workflow include:</p>
+                <ul class="list-disc pl-8">
+                    <li>Master branch for stable releases</li>
+                    <li>Develop branch for ongoing development</li>
+                    <li>Feature branches for new features</li>
+                    <li>Release branches for preparing releases</li>
+                    <li>Hotfix branches for quick fixes</li>
+                </ul>
+                <p>This workflow is well-suited for projects with a structured release cycle and a need for feature isolation.</p>
+            </div>
+
+            <!-- Subsection: GitHub Flow -->
+            <div class="mb-6">
+                <h3 class="text-lg font-semibold mb-2">GitHub Flow</h3>
+                <p class="mb-2">GitHub Flow is a simplified and continuous delivery-oriented workflow designed for projects hosted on GitHub. It emphasizes the following stages:</p>
+                <ul class="list-disc pl-8">
+                    <li>Create a branch for a new feature or bug fix</li>
+                    <li>Commit changes and open a pull request</li>
+                    <li>Discuss, review, and make necessary changes</li>
+                    <li>Merge the pull request to deploy changes</li>
+                </ul>
+                <p>This workflow is suitable for projects with a focus on continuous integration and frequent, small releases.</p>
+            </div>
+
+            <p>By understanding these workflows, you'll be equipped to choose the one that aligns with your team's development style and project goals.</p>
+        </section>
+
+
+                <!-- Section: Git Hooks -->
+        <section class="mb-8">
+            <h2 class="text-xl font-semibold mb-2">Git Hooks</h2>
+            <p class="mb-4">Git hooks are powerful scripts that enable automation and customization within your Git workflow. By understanding Git hooks, you can enhance collaboration, enforce coding standards, and automate repetitive tasks. This section provides an in-depth exploration of Git hooks and their practical implementation:</p>
+
+            <!-- Subsection: Introduction to Git Hooks -->
+            <div class="mb-6">
+                <h3 class="text-lg font-semibold mb-2">Introduction to Git Hooks</h3>
+                <p class="mb-2">Git hooks are scripts that run automatically at key points in the Git workflow. These points include pre-commit, post-commit, pre-push, and more. Git hooks provide opportunities to:</p>
+                <ul class="list-disc pl-8">
+                    <li>Enforce coding standards</li>
+                    <li>Run tests before commits</li>
+                    <li>Trigger deployment processes</li>
+                    <li>Customize commit messages</li>
+                </ul>
+                <p>Understanding when and how to use these hooks can significantly improve the quality and consistency of your codebase.</p>
+            </div>
+
+            <!-- Subsection: Implementing Custom Hooks -->
+            <div class="mb-6">
+                <h3 class="text-lg font-semibold mb-2">Implementing Custom Hooks</h3>
+                <p class="mb-2">While Git provides pre-defined hooks, you can also implement custom hooks tailored to your project's specific needs. Learn how to:</p>
+                <ul class="list-disc pl-8">
+                    <li>Create custom hook scripts</li>
+                    <li>Configure hooks to execute specific actions</li>
+                    <li>Integrate hooks into your team's workflow</li>
+                    <li>Collaborate effectively using shared hooks</li>
+                </ul>
+                <p>This hands-on experience will empower you to automate routine tasks and establish consistent practices within your team.</p>
+            </div>
+
+            <p>By the end of this section, you'll have a comprehensive understanding of Git hooks and the skills to implement them effectively in your development process.</p>
+        </section>
+
+
+                <!-- Section: Git Best Practices -->
+        <section class="mb-8">
+            <h2 class="text-xl font-semibold mb-2">Git Best Practices</h2>
+            <p class="mb-4">Maintaining a well-organized and efficient Git repository is crucial for smooth collaboration and development. In this section, we'll delve into Git best practices that enhance code quality, streamline workflows, and minimize common pitfalls:</p>
+
+            <!-- Subsection: Commit Message Guidelines -->
+            <div class="mb-6">
+                <h3 class="text-lg font-semibold mb-2">Commit Message Guidelines</h3>
+                <p class="mb-2">Crafting meaningful and well-structured commit messages is essential for project maintainability and collaboration. Learn best practices for commit messages, including:</p>
+                <ul class="list-disc pl-8">
+                    <li>Writing concise and descriptive messages</li>
+                    <li>Using imperative language in commit messages</li>
+                    <li>Referencing relevant issues or tasks</li>
+                    <li>Separating subject and body for clarity</li>
+                </ul>
+                <p>Following commit message guidelines ensures a clear and informative Git history for your project.</p>
+            </div>
+
+            <!-- Subsection: Ignoring Files with .gitignore -->
+            <div class="mb-6">
+                <h3 class="text-lg font-semibold mb-2">Ignoring Files with .gitignore</h3>
+                <p class="mb-2">Effectively managing which files are tracked by Git is essential to avoid clutter and unintended commits. Explore best practices for using the .gitignore file to:</p>
+                <ul class="list-disc pl-8">
+                    <li>Exclude temporary files and build artifacts</li>
+                    <li>Ignore IDE-specific files</li>
+                    <li>Customize ignore patterns for your project</li>
+                </ul>
+                <p>Implementing a well-crafted .gitignore file contributes to a cleaner and more focused version control system.</p>
+            </div>
+
+            <!-- Subsection: Troubleshooting Techniques -->
+            <div class="mb-6">
+                <h3 class="text-lg font-semibold mb-2">Troubleshooting Techniques</h3>
+                <p class="mb-2">Encounter and resolve common Git issues with effective troubleshooting techniques. Learn how to address challenges such as:</p>
+                <ul class="list-disc pl-8">
+                    <li>Recovering from accidental commits or merges</li>
+                    <li>Dealing with repository corruption</li>
+                    <li>Resolving merge conflicts efficiently</li>
+                </ul>
+                <p>Equipping yourself with troubleshooting skills ensures a smoother Git experience, even in challenging situations.</p>
+            </div>
+
+            <p>By implementing these Git best practices, you'll contribute to a more collaborative, organized, and efficient development process within your team.</p>
+        </section>
+
+
+            <!-- Section: Troubleshooting and Tips -->
+        <section class="mb-8" id="par2">
+            <h2 class="text-xl font-semibold mb-2">Troubleshooting and Tips</h2>
+            <p class="mb-4">In the world of software development, encountering challenges with Git is inevitable. This section equips you with valuable insights to troubleshoot common Git issues and provides tips to enhance your efficiency throughout your Git workflow:</p>
+
+            <!-- Subsection: Common Git Issues -->
+            <div class="mb-6">
+                <h3 class="text-lg font-semibold mb-2">Common Git Issues</h3>
+                <p class="mb-2">Understand and tackle frequent challenges that developers face in their Git journey. Explore solutions for:</p>
+                <ul class="list-disc pl-8">
+                    <li>Accidental commits and unwanted changes</li>
+                    <li>Merge conflicts and resolution strategies</li>
+                    <li>Repository corruption and recovery</li>
+                    <li>Undoing commits and reverting changes</li>
+                </ul>
+                <p>Being aware of common issues and their solutions empowers you to navigate Git more effectively.</p>
+            </div>
+
+            <!-- Subsection: Tips for Efficient Git Usage -->
+            <div class="mb-6">
+                <h3 class="text-lg font-semibold mb-2">Tips for Efficient Git Usage</h3>
+                <p class="mb-2">Discover practical tips to optimize your Git workflow and enhance your productivity. Learn about:</p>
+                <ul class="list-disc pl-8">
+                    <li>Effective use of branches for feature development</li>
+                    <li>Utilizing Git aliases for frequently used commands</li>
+                    <li>Strategies for handling large repositories</li>
+                    <li>Leveraging Git stash for temporary changes</li>
+                </ul>
+                <p>Applying these tips will make your Git experience smoother and more efficient.</p>
+            </div>
+
+            <p>By the end of this section, you'll not only be equipped to troubleshoot common Git issues but also armed with practical tips to make the most out of Git's capabilities, ensuring a seamless development experience.</p>
+        </section>
+
+
+                <!-- Section: Version Tagging -->
+        <section class="mb-8">
+            <h2 class="text-xl font-semibold mb-2">Version Tagging</h2>
+            <p class="mb-4">Version tagging is a fundamental aspect of release management in Git. This section provides a comprehensive understanding of version tagging, its significance, and how it contributes to marking crucial milestones in your project:</p>
+
+            <!-- Subsection: Significance of Version Tagging -->
+            <div class="mb-6">
+                <h3 class="text-lg font-semibold mb-2">Significance of Version Tagging</h3>
+                <p class="mb-2">Explore why version tagging is crucial for software projects. Version tags:</p>
+                <ul class="list-disc pl-8">
+                    <li>Provide a snapshot of the codebase at a specific point in time</li>
+                    <li>Facilitate easy navigation and retrieval of specific releases</li>
+                    <li>Enable clear communication about software versions</li>
+                    <li>Aid in identifying and managing dependencies</li>
+                </ul>
+                <p>Understanding the significance of version tagging ensures a structured and organized release process for your project.</p>
+            </div>
+
+            <!-- Subsection: Principles of Semantic Versioning -->
+            <div class="mb-6">
+                <h3 class="text-lg font-semibold mb-2">Principles of Semantic Versioning</h3>
+                <p class="mb-2">Delve into the principles of semantic versioning, a widely adopted versioning scheme. Semantic versioning consists of three components: major, minor, and patch versions. Understand how:</p>
+                <ul class="list-disc pl-8">
+                    <li>Major versions indicate incompatible changes</li>
+                    <li>Minor versions add functionality in a backward-compatible manner</li>
+                    <li>Patch versions include backward-compatible bug fixes</li>
+                </ul>
+                <p>Applying semantic versioning principles ensures consistency and clarity in versioning across your projects.</p>
+            </div>
+
+            <!-- Subsection: Applying Version Tags -->
+            <div class="mb-6">
+                <h3 class="text-lg font-semibold mb-2">Applying Version Tags</h3>
+                <p class="mb-2">Learn the practical steps to apply version tags to your Git repository. This includes:</p>
+                <ul class="list-disc pl-8">
+                    <li>Creating lightweight and annotated tags</li>
+                    <li>Tagging specific commits or releases</li>
+                    <li>Pushing tags to remote repositories</li>
+                    <li>Retrieving and checking out tagged versions</li>
+                </ul>
+                <p>Mastering the application of version tags enhances your ability to manage and release software versions effectively.</p>
+            </div>
+
+            <p>By the end of this section, you'll have a deep understanding of version tagging and semantic versioning principles, enabling you to implement a robust versioning strategy for your projects.</p>
+        </section>
+
+        </div>
+        <div class="absolute bottom-0 right-3">
+            <button class=" bg-gray-800 text-white font-bold py-2 px-4 rounded" routerLink="/quiz3">QUIZ TEST</button>
+        </div>
+        
+    </div>
+    <div class="fixed z-0 top-10 right-0 w-1/4 h-full border-l-2 pt-14 ">
+      <button (click)="toggleDropdown(1)" class="text-black text-lg font-medium px-5 py-2.5 text-center inline-flex items-center w-full justify-between" type="button">
+        Chapter 1
+        <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
+        </svg>
+      </button>
+        <br>
+        <div [ngClass]="{'hidden': isDropdownHidden[1]}" class="z-10 divide-y divide-gray-100">
+          <ul class="pl-8 text-sm text-gray-700" aria-labelledby="dropdownDefaultButton">
+            <li>
+              <a class="block px-4 py-2 ml-4 text-base  cursor-pointer" routerLink="/chap1">Part 1</a>
+            </li>
+            <li>
+              <a class="block px-4 py-2 ml-4 text-base  cursor-pointer" routerLink="/chap1">Part 2</a>
+            </li>
+            <li>
+              <a  routerLink="/quiz" class="block px-4 py-2 ml-4 text-base  cursor-pointer">Quiz</a>
+            </li>
+          </ul>
+        </div>
+        <button (click)="toggleDropdown(2)" class="text-black text-lg font-medium px-5 py-2.5 text-center inline-flex items-center w-full justify-between" type="button">
+          Chapter 2
+          <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
+          </svg>
+        </button>
+        <br>
+        <div [ngClass]="{'hidden': isDropdownHidden[2]}" class="z-10 divide-y divide-gray-100">
+          <ul class="pl-8 text-sm text-gray-700" aria-labelledby="dropdownDefaultButton">
+            <li>
+              <a href="#" class="block px-4 py-2 ml-4 text-base cursor-pointer" routerLink="/chap2">Part 1</a>
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 ml-4 text-base cursor-pointer" routerLink="/chap2">Part 2</a>
+            </li>
+            <li>
+              <a routerLink="/quiz2" class="block px-4 py-2 ml-4 text-base cursor-pointer">Quiz</a>
+            </li>
+          </ul>
+        </div>
+        <button (click)="toggleDropdown(3)" class="text-lg text-black font-medium px-5 py-2.5 text-center inline-flex items-center w-full justify-between" type="button">
+          Chapter 3
+          <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
+          </svg>
+        </button>
+        <br>
+        <div [ngClass]="{'hidden': isDropdownHidden[3]}" class="z-10 divide-y divide-gray-100">
+          <ul class="pl-8 text-gray-700" aria-labelledby="dropdownDefaultButton">
+            <li>
+              <a (click)="scrollTo('par1')" class="block px-4 py-2 ml-4 text-base cursor-pointer">Part 1</a>
+            </li>
+            <li>
+              <a (click)="scrollTo('par2')" class="block px-4 py-2 ml-4 text-base cursor-pointer">Part 2</a>
+            </li>
+            <li>
+              <a routerLink="/quiz3" class="block px-4 py-2 ml-4 text-base cursor-pointer">Quiz</a>
+            </li>
+          </ul>
+        </div>
+    </div>
+</div>
+
+
+
+

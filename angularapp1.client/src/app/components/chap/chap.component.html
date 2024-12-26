@@ -1,0 +1,182 @@
+<div class="relative">
+    <div class="relative w-3/4 py-8 ">
+        <div class="w-3/4 mx-auto h-full mb-8">
+          <p class="font-mono text-xl py-4">Chapter 1: Introduction to Version Control and Git Basics</p>
+          <br>
+           <div>
+            <span>Introduction to Version Control</span><br>
+            <span>Definition and Importance of Version Control in Software Development</span><br>
+            <p id="par1">Version control is a system that allows multiple contributors to work on a project simultaneously without conflicts, by keeping track of changes made to the codebase over time. It ensures a systematic approach to managing and organizing code, enabling collaboration and minimizing errors. Version control is essential in software development for the following reasons:</p>
+            <ul class="list-disc text-lg">
+                <li>History Tracking: Version control systems maintain a historical record of changes, allowing developers to trace the evolution of the codebase.</li>
+                <li>Collaboration: Multiple developers can work on the same project concurrently, with the version control system managing merge conflicts and ensuring a coherent final product</li>
+                <li>Backup and Recovery: It provides a safety net by acting as a backup, allowing teams to revert to previous versions in case of errors or unforeseen issues.</li>
+            </ul>
+            <span>Common Version Control Systems and Their Purpose</span><br>
+            <p>Several version control systems exist, each with its own characteristics and purposes. Some of the commonly used version control systems include:</p><br>
+            <ul class="list-disc text-lg">
+                <li>Git: A distributed version control system that offers flexibility and powerful branching capabilities. It has become the de facto standard in the industry.</li>
+                <li>Subversion (SVN): A centralized version control system that tracks changes in a central repository. It's known for its simplicity.</li>
+                <li>Mercurial: Another distributed version control system, similar to Git, but with a focus on simplicity and ease of use.</li>
+            </ul>
+            <span>Understanding Git</span><br>
+            <span>What is Git?</span><br>
+            <p>Git is a distributed version control system designed for tracking changes in source code during software development. Developed by Linus Torvalds, Git has gained widespread adoption due to its efficiency, speed, and robust branching and merging capabilities.</p>
+            <h1>Git's Role in Tracking Changes and Collaboration</h1>
+
+            <p>Git plays a crucial role in software development by:</p>
+
+            <ul>
+                <li><strong>Tracking Changes:</strong> Git records changes made to the codebase, allowing developers to view, revert, or merge these changes seamlessly.</li>
+                <li><strong>Branching and Merging:</strong> Git enables the creation of branches for independent development and facilitates the merging of these branches, making collaboration efficient and manageable.</li>
+            </ul>
+
+            <h2>Installation and Configuration</h2>
+
+            <h3>How to Install Git on Different Operating Systems</h3>
+
+            <p>Git can be installed on various operating systems, including Windows, macOS, and Linux. Here's a brief guide for each:</p>
+
+            <h4>Windows</h4>
+            <ol>
+                <li>Download the Git installer from the <a href="https://git-scm.com/download/win">official Git website</a>.</li>
+                <li>Run the installer, following the on-screen instructions.</li>
+                <li>Configure installation options as needed.</li>
+            </ol>
+
+            <h4>macOS</h4>
+            <p>Install Git using Homebrew by running <code>brew install git</code> in the terminal. Alternatively, download and install the macOS Git installer from the <a href="https://git-scm.com/download/mac">official Git website</a>.</p>
+
+            <h4>Linux</h4>
+            <p>Use the package manager specific to your Linux distribution to install Git. For example:</p>
+
+            <ul>
+                <li><strong>Debian/Ubuntu:</strong> <code>sudo apt-get install git</code></li>
+                <li><strong>Red Hat/Fedora:</strong> <code>sudo yum install git</code></li>
+            </ul>
+            <h2>Basic Configuration Settings: Name, Email, etc.</h2>
+
+            <p id="par2">After installing Git, it's essential to configure basic settings:</p>
+
+            <pre class="bg-gray-800 p-4 rounded-md overflow-x-auto"><code class="text-sm text-white"># Set your name
+            git config --global user.name "Your Name"
+
+            # Set your email
+            git config --global user.email "your.email@example.com"
+            </code></pre>
+
+            <p>These settings identify your contributions in Git commits.</p>
+
+            <h2>Creating Your First Repository</h2>
+
+            <h3>Initializing a New Git Repository</h3>
+
+            <p>To start a new project with Git, follow these steps:</p>
+
+            <ol>
+                <li>Navigate to your project directory using the terminal.</li>
+                <li>Run <code>git init</code> to initialize a new Git repository.</li>
+            </ol>
+
+            <h3>Understanding the Working Directory, Staging Area, and Repository</h3>
+
+            <p>In Git, the working directory is where you modify files, the staging area is where you prepare changes for commit, and the repository is where Git stores the committed changes.</p>
+
+            <h2>Basic Git Commands</h2>
+
+            <h3><code>git add</code>, <code>git commit</code>, and <code>git status</code></h3>
+
+            <p><code>git add</code></p>
+            <p>This command adds changes from the working directory to the staging area:</p>
+
+            <pre class="bg-gray-800 p-4 rounded-md overflow-x-auto"><code class="text-sm text-white">git add filename</code></pre>
+
+            <p><code>git commit</code></p>
+            <p>Commits changes from the staging area to the repository with a commit message:</p>
+
+            <pre class="bg-gray-800 p-4 rounded-md overflow-x-auto"><code class="text-sm text-white">git commit -m "Your commit message"</code></pre>
+
+            <p><code>git status</code></p>
+            <p>Displays the status of your working directory and staging area:</p>
+
+            <pre class="bg-gray-800 p-4 rounded-md overflow-x-auto"><code class="text-sm text-white">git status</code></pre>
+
+            <h3>Viewing the Commit History with <code class="text-sm text-white">git log</code></h3>
+
+            <p>To view a detailed history of commits, use the following command:</p>
+
+            <pre class="bg-gray-800 p-4 rounded-md overflow-x-auto"><code class="text-sm text-white">git log</code></pre>
+
+            <p>This command displays information about commits, including the commit hash, author, date, and commit message. It helps track changes and understand the development history of your project.</p>
+           </div>
+        </div>
+        <div class="absolute bottom-0 right-3">
+            <button class=" bg-gray-800 text-white font-bold py-2 px-4 rounded" routerLink="/quiz">QUIZ TEST</button>
+        </div>
+        
+    </div>
+    <div class="fixed z-0 top-10 right-0 w-1/4 h-full border-l-2 pt-14 ">
+      <button (click)="toggleDropdown(1)" class="text-black text-lg font-medium px-5 py-2.5 text-center inline-flex items-center w-full justify-between" type="button">
+        Chapter 1
+        <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
+        </svg>
+      </button>
+        <br>
+        <div [ngClass]="{'hidden': isDropdownHidden[1]}" class="z-10 divide-y divide-gray-100">
+          <ul class="pl-8 text-sm text-gray-700" aria-labelledby="dropdownDefaultButton">
+            <li>
+              <a (click)="scrollTo('par1')" class="block px-4 py-2 ml-4 text-base  cursor-pointer">Part 1</a>
+            </li>
+            <li>
+              <a (click)="scrollTo('par2')" class="block px-4 py-2 ml-4 text-base  cursor-pointer">Part 2</a>
+            </li>
+            <li>
+              <a  routerLink="/quiz" class="block px-4 py-2 ml-4 text-base  cursor-pointer">Quiz</a>
+            </li>
+          </ul>
+        </div>
+        <button (click)="toggleDropdown(2)" class="text-black text-lg font-medium px-5 py-2.5 text-center inline-flex items-center w-full justify-between" type="button">
+          Chapter 2
+          <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
+          </svg>
+        </button>
+        <br>
+        <div [ngClass]="{'hidden': isDropdownHidden[2]}" class="z-10 divide-y divide-gray-100">
+          <ul class="pl-8 text-sm text-gray-700" aria-labelledby="dropdownDefaultButton">
+            <li>
+              <a class="block px-4 py-2 ml-4 text-base cursor-pointer" routerLink="/chap2">Part 1</a>
+            </li>
+            <li>
+              <a class="block px-4 py-2 ml-4 text-base cursor-pointer" routerLink="/chap2">Part 2</a>
+            </li>
+            <li>
+              <a  routerLink="/quiz2" class="block px-4 py-2 ml-4 text-base cursor-pointer">Quiz</a>
+            </li>
+          </ul>
+        </div>
+        <button (click)="toggleDropdown(3)" class="text-lg text-black font-medium px-5 py-2.5 text-center inline-flex items-center w-full justify-between" type="button">
+          Chapter 3
+          <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
+          </svg>
+        </button>
+        <br>
+        <div [ngClass]="{'hidden': isDropdownHidden[3]}" class="z-10 divide-y divide-gray-100">
+          <ul class="pl-8 text-gray-700" aria-labelledby="dropdownDefaultButton">
+            <li>
+              <a class="block px-4 py-2 ml-4 text-base cursor-pointer" routerLink="/chap3">Part 1</a>
+            </li>
+            <li>
+              <a class="block px-4 py-2 ml-4 text-base cursor-pointer" routerLink="/chap3">Part 2</a>
+            </li>
+            <li>
+              <a  routerLink="/quiz3" class="block px-4 py-2 ml-4 text-base cursor-pointer">Quiz</a>
+            </li>
+          </ul>
+        </div>
+    </div>
+</div>
+
+

@@ -1,0 +1,45 @@
+<div class="bg-gray-100 p-8">
+  <div class="max-w-lg mx-auto bg-white p-6 rounded-md shadow-md">
+    <h1 class="text-2xl font-bold mb-4">Git Basics Quiz</h1>
+
+    <!-- ... Existing quiz form ... -->
+
+    <form id="quizForm">
+      <!-- Add a hidden input field for the quiz ID -->
+      <div [hidden]="true" [attr.data-quiz-id]="1"></div>
+      <div class="mb-6" *ngFor="let question of questions; let i = index">
+        <p class="text-lg font-semibold mb-2">{{ i + 1 }}. {{ question.question }}</p>
+        <div *ngFor="let choice of question.choices; let j = index" class="block">
+          <input type="radio"
+                 [name]="'q' + i"
+                 [value]="choice"
+                 (change)="answers[i] = choice; checkAllQuestionsAnswered()">
+          <span class="ml-2">{{ choice }}</span>
+        </div>
+      </div>
+
+      <button type="button"
+              [disabled]="!allQuestionsAnswered"
+              class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-700" (click)="onSubmit()">
+        Submit
+      </button>
+    </form>
+
+    <!-- Display correct count -->
+    <div *ngIf="allQuestionsAnswered">
+      <h2 class="text-xl font-bold mt-6 mb-2">Correct Answers:</h2>
+      <p>{{ correctCount }} out of {{ questions.length }}</p>
+    </div>
+
+    <!-- Display user's answers -->
+    <div *ngIf="allQuestionsAnswered">
+      <h2 class="text-xl font-bold mt-6 mb-2">Your Answers:</h2>
+      <div *ngFor="let question of questions; let i = index">
+        <p class="mb-1">{{ i + 1 }}. {{ question.question }}</p>
+        <p class="ml-4">Your Answer: {{ answers[i] }}</p>
+        <hr class="my-2">
+      </div>
+    </div>
+
+  </div>
+</div>

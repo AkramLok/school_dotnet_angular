@@ -1,0 +1,93 @@
+<div class="relative">
+  <div class="introduction w-3/4 py-8 ">
+    <div class="w-3/4 mx-auto h-full">
+      <p class="font-mono text-xl py-4">Title: Git Mastery Online Course: Certify Your Expertise</p>
+      <br>
+      <img src="assets/sddefault.jpg" alt="" class="w-96 h-64 my-3">
+      <span class="font-bold text-xl">What you will learn</span>
+      <ul class="list-disc text-lg">
+        <li>Learn the key concepts of the Git version control system</li>
+        <li>Navigate through the entire Git workflow</li>
+        <li>Compare different states in Git</li>
+        <li>Manage files inside and outside of Git</li>
+        <li>Create and manage repositories on GitHub</li>
+        <li>Manage local and remote repositories with Git</li>
+      </ul>
+      <br>
+      <span class="font-bold text-xl">Description:</span>
+      <p class="text-lg">This course is designed to distill academic theory into key concepts and focus on basic tasks in Git to make you productive</p>
+      <br>
+      <span class="font-bold text-xl">For whom is this course intended?</span>
+      <ul class="list-disc text-lg">
+        <li>Anyone interested in source control, particularly Git.</li>
+        <li>Software engineers, developers, and programmers new to Git.</li>
+        <li>IT managers or technical leads considering Git for version control within their team.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="fixed z-0 top-10 right-0 w-1/4 h-full border-l-2 pt-14">
+    <button (click)="toggleDropdown(1)" class="text-black text-lg font-medium px-5 py-2.5 text-center inline-flex items-center w-full justify-between" type="button">
+      Chapter 1
+      <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
+      </svg>
+    </button>
+    <br>
+    <div [ngClass]="{'hidden': isDropdownHidden[1]}" class="z-10 divide-y divide-gray-100">
+      <ul class="pl-8 text-sm text-gray-700" aria-labelledby="dropdownDefaultButton">
+        <li>
+          <a  class="block px-4 py-2 ml-4 text-base" routerLink="/chap">Part 1</a>
+        </li>
+        <li>
+          <a class="block px-4 py-2 ml-4 text-base" routerLink="/chap">Part 2</a>
+        </li>
+        <li>
+          <a routerLink="/quiz"  class="block px-4 py-2 ml-4 text-base">Quiz</a>
+        </li>
+      </ul>
+    </div>
+    <button (click)="toggleDropdown(2)" class="text-black text-lg font-medium px-5 py-2.5 text-center inline-flex items-center w-full justify-between" type="button">
+      Chapter 2
+      <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
+      </svg>
+    </button>
+    <br>
+    <div [ngClass]="{'hidden': isDropdownHidden[2]}" class="z-10 divide-y divide-gray-100">
+      <ul class="pl-8 text-sm text-gray-700" aria-labelledby="dropdownDefaultButton">
+        <li>
+          <a  class="block px-4 py-2 ml-4 text-base" routerLink="/chap2">Part 1</a>
+        </li>
+        <li>
+          <a class="block px-4 py-2 ml-4 text-base" routerLink="/chap2">Part 2</a>
+        </li>
+        <li>
+          <a routerLink="/quiz2" class="block px-4 py-2 ml-4 text-base">Quiz</a>
+        </li>
+      </ul>
+    </div>
+    <button (click)="toggleDropdown(3)" class="text-lg text-black font-medium px-5 py-2.5 text-center inline-flex items-center w-full justify-between" type="button">
+      Chapter 3
+      <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
+      </svg>
+    </button>
+    <br>
+    <div [ngClass]="{'hidden': isDropdownHidden[3]}" class="z-10 divide-y divide-gray-100">
+      <ul class="pl-8 text-gray-700" aria-labelledby="dropdownDefaultButton">
+        <li>
+          <a class="block px-4 py-2 ml-4 text-base" routerLink="/chap3">Part 1</a>
+        </li>
+        <li>
+          <a class="block px-4 py-2 ml-4 text-base" routerLink="/chap3">Part 2</a>
+        </li>
+        <li>
+          <a routerLink="/quiz3" class="block px-4 py-2 ml-4 text-base">Quiz</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+

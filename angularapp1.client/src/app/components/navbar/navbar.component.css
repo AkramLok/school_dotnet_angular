@@ -1,0 +1,11 @@
+*{
+    
+    font-family: 'Mynerve', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Playpen Sans', cursive;
+    font-family: 'Poppins', sans-serif;
+    
+}
+mat-icon{
+    font-family: 'Material Icons' !important;
+}
